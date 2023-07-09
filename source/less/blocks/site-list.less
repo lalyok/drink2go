@@ -1,0 +1,33 @@
+.site-list {
+  border-top: 1px solid @basic-secondary;
+}
+
+.site-list__link {
+  .nav-link();
+  display: block;
+  padding: 20px 20px 19px;
+  text-align: center;
+  border-bottom: 1px solid @basic-secondary;
+
+  &:active {
+    background-color: @basic-secondary;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--active {
+      border-bottom: 2px solid @basic-primary;
+      color: @basic-primary;
+    }
+  }
+}
+
+.site-list__item:active .site-list__link {
+  color: @basic-primary;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item:hover .site-list__link,
+  .site-list__item:focus .site-list__link {
+    color: @basic-primary;
+  }
+}

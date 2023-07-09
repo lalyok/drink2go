@@ -1,0 +1,31 @@
+.socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.socials__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: @basic-white;
+  border-radius: 4px;
+  color: @basic-gray;
+
+  @media (min-width: @desktop-width) {
+    &:hover,
+    &:focus {
+      background-color: @basic-secondary;
+      color: @basic-primary;
+    }
+  }
+
+  &:active {
+    background-color: @primary-translucent;
+    color: @basic-primary;
+  }
+}

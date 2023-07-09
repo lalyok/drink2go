@@ -1,0 +1,37 @@
+.price-range {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 3%;
+    height: 2px;
+    background-color: @basic-gray;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 18px;
+  }
+}
+
+.price-range__slider {
+  flex-basis: 100%;
+  margin-bottom: 24px;
+}
+
+.price-range__value {
+  min-width: 118px;
+  width: 36%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 2px solid @primary-light;
+  background-color: @basic-white;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}

@@ -1,0 +1,30 @@
+.advantages {
+  background-color: @basic-white;
+  padding: 50px 20px 60px;
+}
+
+.advantages__subtitle {
+  .badge();
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.advantages__title {
+  .title();
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}

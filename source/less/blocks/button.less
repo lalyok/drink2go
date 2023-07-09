@@ -1,0 +1,54 @@
+.button {
+  color: @basic-white;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: block;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: @basic-primary;
+
+  @media (min-width: @desktop-width) {
+    &:hover,
+    &:focus {
+      background-color: @primary-light;
+    }
+  }
+
+  &:active {
+    background-color: @primary-dark;
+  }
+
+  &:disabled {
+    background-color: @basic-gray;
+  }
+
+  &--smaller-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &--white {
+    background-color: @basic-white;
+    color: @basic-primary;
+
+    @media (min-width: @desktop-width) {
+      &:hover,
+      &:focus {
+        color: @basic-white;
+      }
+    }
+
+    &:active,
+    &:disabled {
+      color: @basic-white;
+    }
+
+    &:disabled {
+      background-color: @light-gray;
+    }
+  }
+}

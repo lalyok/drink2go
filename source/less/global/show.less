@@ -1,0 +1,21 @@
+.show {
+  display: none;
+
+  @media (max-width: (@tablet-width - 1px)) {
+    &--mobile {
+      display: block;
+    }
+  }
+
+  @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
+    &--tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--desktop {
+      display: block;
+    }
+  }
+}

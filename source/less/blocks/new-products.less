@@ -1,0 +1,60 @@
+.new-products__slider {
+  position: relative;
+}
+
+.new-products__item {
+  padding: 20px 20px 60px;
+  text-align: center;
+
+  &--white {
+    background-color: @flat-white;
+  }
+
+  &--lavender {
+    background-color: @lavender-latte;
+  }
+
+  &--espresso {
+    background-color: @espresso;
+  }
+}
+
+.new-products__slider-button {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+}
+
+.new-products__title {
+  .title-large();
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  &::before {
+    content: "Новинка!";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    .badge();
+  }
+}
+
+.new-products__description {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
