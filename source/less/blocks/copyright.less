@@ -9,9 +9,15 @@
   display: flex;
   justify-content: center;
   gap: 3px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__link {
+  color: @basic-gray;
+
   @media (min-width: @desktop-width) {
     &:hover,
     &:focus {

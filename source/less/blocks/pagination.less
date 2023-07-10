@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .pagination__button {
@@ -25,9 +29,17 @@
       color: @basic-black;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    &--back,
+    &--forward {
+      width: auto;
+      height: auto;
+      padding: 8px 20px;
+    }
+  }
 }
 
 .pagination__icon {
-  display: block;
   margin: auto;
 }

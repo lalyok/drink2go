@@ -1,6 +1,19 @@
 .catalog {
   background-color: @lightest-gray;
+}
+
+.catalog__wrapper {
   padding: 50px 20px 44px;
+
+  @media (min-width: @tablet-width) {
+    padding: 100px 20px 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 100px 40px 120px;
+    width: @desktop-width;
+    margin: 0 auto;
+  }
 }
 
 .catalog__subtitle {
@@ -15,4 +28,8 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+  }
 }

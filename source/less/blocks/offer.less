@@ -2,6 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &--align-left {
+    @media (min-width: @desktop-width) {
+      justify-content: flex-start;
+    }
+  }
+
+  &--card {
+    justify-content: space-between;
+  }
 }
 
 .offer__old-price {
@@ -16,10 +26,6 @@
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 20px;
-
-  &--card {
-    margin-right: 44px;
-  }
 }
 
 .offer__buy-button-icon {

@@ -19,4 +19,15 @@
 
 .contacts__link {
   color: @basic-black;
+
+  @media (min-width: @desktop-width) {
+    &:hover,
+    &:focus {
+      color: @basic-primary;
+    }
+  }
+
+  &:active {
+    color: @primary-dark;
+  }
 }

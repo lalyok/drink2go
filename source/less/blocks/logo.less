@@ -1,0 +1,38 @@
+.logo {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 316px;
+  }
+
+  &--vertical {
+    @media (min-width: @desktop-width) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+}
+
+.logo__link {
+  display: block;
+  height: 36px;
+}
+
+.logo__image {
+  height: 36px;
+  object-fit: contain;
+}
+
+.logo__text {
+  max-width: 126px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.logo--vertical .logo__text {
+  max-width: 318px;
+}

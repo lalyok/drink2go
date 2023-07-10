@@ -25,3 +25,16 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+// Removing input type="number" arrows
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+}
