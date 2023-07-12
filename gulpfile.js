@@ -6,6 +6,7 @@ import postcss from 'gulp-postcss';
 import postUrl from 'postcss-url';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
+import webpack from 'webpack-stream';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
@@ -46,9 +47,47 @@ export function processStyles () {
     .pipe(browser.stream());
 }
 
+export function processNormalize () {
+  return gulp.src('source/css/normalize.css')
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(rename("normalize.min.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
 export function processScripts () {
   return gulp.src('source/js/**/*.js')
-    .pipe(terser())
+    .pipe(webpack({
+      mode: 'production',
+  output: {
+    filename: 'script.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [
+          "style-loader",
+          "css-loader"
+        ],
+      },
+      {
+        test: /\.less$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          "less-loader"
+        ],
+      },
+    ],
+  },
+    }))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }

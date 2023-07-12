@@ -1,0 +1,84 @@
+.product {
+  padding: 20px 20px 60px;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 80px 80px 308px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    padding: 30px 80px 60px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 650px 1fr;
+    column-gap: 5px;
+    text-align: start;
+  }
+}
+
+.product__image {
+  object-fit: contain;
+  width: 280px;
+  height: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 476px;
+    height: 476px;
+    position: absolute;
+    top: 352px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 600px;
+    height: 600px;
+    position: static;
+    display: block;
+  }
+}
+
+.product__inner {
+  @media (min-width: @desktop-width) {
+    margin-top: 170px;
+  }
+}
+
+.product__title {
+  .title-large();
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  &::before {
+    content: "Новинка!";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    .badge();
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.product__description {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+  }
+}

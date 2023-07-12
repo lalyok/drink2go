@@ -1,0 +1,58 @@
+@import "../global/variables.less";
+
+.price-range .range {
+  height: 2px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: @light-gray;
+}
+
+.range .range__handle {
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  border-radius: 50%;
+  border: 2px solid @primary-light;
+  background-color: @basic-white;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 0 0 2px @basic-white, inset 0 0 0 15px @primary-translucent;
+    }
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 2px @basic-white, inset 0 0 0 15px @basic-primary;
+  }
+}
+
+.range .range__connects {
+  overflow: visible;
+}
+
+.range .range__connect {
+  background-color: @primary-light;
+  height: 4px;
+}
+
+.range[disabled] .range__connect {
+  background-color: @basic-gray;
+}
+
+.range[disabled] .range__handle {
+  border-color: @basic-gray;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: @basic-gray;
+    box-shadow: none;
+  }
+}

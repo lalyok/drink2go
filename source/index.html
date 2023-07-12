@@ -5,9 +5,16 @@
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">  <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
+
   <body class="page__body">
-    <header class="page-header page-header--opened">
+    <header class="page-header page-header--closed page-header--no-js">
       <div class="page-header__wrapper">
 
         <div class="page-header__logo logo">
@@ -74,14 +81,14 @@
       <section class="new-products">
         <h2 class="visually-hidden">Новинки</h2>
 
-        <div class="swiper new-products__slider">
+        <div class="swiper new-products__slider slider">
 
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
 
-              <div class="new-products__item new-products__item--white">
-                <div class="new-products__item-wrapper">
+              <div class="slider__slide slider__slide--white">
+                <div class="slider__slide-wrapper product">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/flat-white-desktop.webp 1x, img/flat-white-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/flat-white-tablet.webp 1x, img/flat-white-tablet@2x.webp 2x">
@@ -90,15 +97,15 @@
                     <source media="(min-width: 1440px)" srcset="img/flat-white-desktop.png 1x, img/flat-white-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/flat-white-tablet.png 1x, img/flat-white-tablet@2x.png 2x">
                     <source srcset="img/flat-white-mobile.png 1x, img/flat-white-mobile@2x.png 2x">
-                    <img class="new-products__image" src="img/flat-white-mobile.png" width="280" height="280" alt="Декаф Флэт Уайт">
+                    <img class="product__image" src="img/flat-white-mobile.png" width="280" height="280" alt="Декаф Флэт Уайт">
                   </picture>
 
-                  <div class="new-products__inner">
-                    <h3 class="new-products__title">Декаф Флэт Уайт</h3>
-                    <p class="new-products__description">
+                  <div class="product__inner">
+                    <h3 class="product__title">Декаф Флэт Уайт</h3>
+                    <p class="product__description">
                       Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
                     </p>
-                    <div class="new-products__buy offer offer--align-left">
+                    <div class="product__buy offer offer--align-left">
                       <p class="offer__old-price">295₽</p>
                       <p class="offer__price">225₽</p>
                       <a class="offer__buy-button button" href="#">Заказать</a>
@@ -112,8 +119,8 @@
 
             <div class="swiper-slide">
 
-              <div class="new-products__item new-products__item--lavender">
-                <div class="new-products__item-wrapper">
+              <div class="slider__slide slider__slide--lavender">
+                <div class="slider__slide-wrapper product">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/lavender-desktop.webp 1x, img/lavender-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/lavender-tablet.webp 1x, img/lavender-tablet@2x.webp 2x">
@@ -122,15 +129,15 @@
                     <source media="(min-width: 1440px)" srcset="img/lavender-desktop.png 1x, img/lavender-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/lavender-tablet.png 1x, img/lavender-tablet@2x.png 2x">
                     <source srcset="img/lavender-mobile.png 1x, img/lavender-mobile@2x.png 2x">
-                    <img class="new-products__image" src="img/lavender-mobile.png" width="280" height="280" alt="Лавандовый Латте">
+                    <img class="product__image" src="img/lavender-mobile.png" width="280" height="280" alt="Лавандовый Латте">
                   </picture>
 
-                  <div class="new-products__inner">
-                    <h3 class="new-products__title">Лавандовый Латте</h3>
-                    <p class="new-products__description">
+                  <div class="product__inner">
+                    <h3 class="product__title">Лавандовый Латте</h3>
+                    <p class="product__description">
                       Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
                     </p>
-                    <div class="new-products__buy offer offer--align-left">
+                    <div class="product__buy offer offer--align-left">
                       <p class="offer__old-price">285₽</p>
                       <p class="offer__price">265₽</p>
                       <a class="offer__buy-button button" href="#">Заказать</a>
@@ -144,8 +151,8 @@
 
             <div class="swiper-slide">
 
-              <div class="new-products__item new-products__item--espresso">
-                <div class="new-products__item-wrapper">
+              <div class="slider__slide slider__slide--espresso">
+                <div class="slider__slide-wrapper product">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/espresso-desktop.webp 1x, img/espresso-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/espresso-tablet.webp 1x, img/espresso-tablet@2x.webp 2x">
@@ -154,15 +161,15 @@
                     <source media="(min-width: 1440px)" srcset="img/espresso-desktop.png 1x, img/espresso-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/espresso-tablet.png 1x, img/espresso-tablet@2x.png 2x">
                     <source srcset="img/espresso-mobile.png 1x, img/espresso-mobile@2x.png 2x">
-                    <img class="new-products__image" src="img/espresso-mobile.png" width="280" height="280" alt="Тройной Эспрессо">
+                    <img class="product__image" src="img/espresso-mobile.png" width="280" height="280" alt="Тройной Эспрессо">
                   </picture>
 
-                  <div class="new-products__inner">
-                    <h3 class="new-products__title">Тройной Эспрессо</h3>
-                    <p class="new-products__description">
+                  <div class="product__inner">
+                    <h3 class="product__title">Тройной Эспрессо</h3>
+                    <p class="product__description">
                       Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
                     </p>
-                    <div class="new-products__buy offer offer--align-left">
+                    <div class="product__buy offer offer--align-left">
                       <p class="offer__old-price">395₽</p>
                       <p class="offer__price">375₽</p>
                       <a class="offer__buy-button button" href="#">Заказать</a>
@@ -176,18 +183,18 @@
 
           </div>
 
-          <div class="swiper-button-prev new-products__slider-button new-products__slider-button--prev">
+          <div class="swiper-button-prev slider__button slider__button--prev">
             <svg width="11" height="20">
               <use xlink:href="img/icons/stack.svg#slider-prev"></use>
             </svg>
           </div>
-          <div class="swiper-button-next new-products__slider-button new-products__slider-button--next">
+          <div class="swiper-button-next slider__button slider__button--next">
             <svg width="11" height="20">
               <use xlink:href="img/icons/stack.svg#slider-next"></use>
             </svg>
           </div>
 
-          <div class="swiper-pagination show show--desktop"></div>
+          <div class="swiper-pagination slider__pagination show show--desktop"></div>
 
         </div>
       </section>
@@ -254,7 +261,7 @@
               <fieldset class="filter__item price-range">
                 <legend class="filter__item-title">Цена</legend>
 
-                <div class="price-range__slider"></div>
+                <div class="price-range__slider range"></div>
                 <div class="price-range__values-container">
                   <input class="price-range__value" type="number" name="from-value" value="0" min="0" max="1000">
                   <input class="price-range__value" type="number" name="to-value" value="900" min="0" max="1000">
@@ -511,7 +518,7 @@
         </div>
       </section>
 
-      <section class="coordinates">
+      <section class="coordinates coordinates--no-js">
         <h2 class="visually-hidden">Наши координаты</h2>
         <picture>
           <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
@@ -523,9 +530,7 @@
           <source srcset="img/map-mobile.png 1x, img/map-mobile@2x.png 2x">
           <img class="coordinates__image" src="img/map-mobile.png" width="320" height="420" alt="Карта расположения магазина">
         </picture>
-        <div class="map">
-
-        </div>
+        <div class="coordinates__map" id="map"></div>
       </section>
     </main>
 

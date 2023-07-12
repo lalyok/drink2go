@@ -43,7 +43,9 @@
 }
 
 .page-header--closed .page-header__menu {
-  display: none;
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }
 
 .page-header__menu {
@@ -55,6 +57,10 @@
 
 .page-header--no-js .page-header__toggle {
   display: none;
+}
+
+.page-header--no-js .page-header__menu {
+  display: block;
 }
 
 .page-header__toggle {

@@ -1,18 +1,9 @@
 .coordinates {
   background-color: @basic-white;
-  height: 420px;
-
-  @media (min-width: @tablet-width) {
-    height: 480px;
-  }
-
-  @media (min-width: @desktop-width) {
-    height: 540px;
-  }
 }
 
 .coordinates__image {
-  display: block;
+  display: none;
   margin: 0 auto;
   width: @mobile-width;
   object-fit: contain;
@@ -24,4 +15,24 @@
   @media (min-width: @desktop-width) {
     width: @desktop-width;
   }
+}
+
+.coordinates--no-js .coordinates__image {
+  display: block;
+}
+
+.coordinates__map {
+  height: 420px;
+
+  @media (min-width: @tablet-width) {
+    height: 480px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 540px;
+  }
+}
+
+.coordinates--no-js .coordinates__map {
+  display: none;
 }

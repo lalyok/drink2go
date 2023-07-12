@@ -1,0 +1,91 @@
+@import "../global/variables.less";
+
+.slider__slide {
+  &--white {
+    background-color: @flat-white;
+  }
+
+  &--lavender {
+    background-color: @lavender-latte;
+  }
+
+  &--espresso {
+    background-color: @espresso;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    display: none;
+  }
+
+  &--prev {
+    left: 0;
+
+    @media (min-width: @desktop-width) {
+      left: calc(50vw - (@desktop-width / 2));
+
+      &:hover,
+      &:focus {
+        background: linear-gradient(90deg, @basic-white 0%, rgba(@basic-white, 0) 100%);
+      }
+    }
+
+    &:active {
+      background: linear-gradient(90deg, rgba(@basic-primary, 0.25) 0%, rgba(@basic-primary, 0) 100%);
+    }
+  }
+
+  &--next {
+    right: 0;
+
+    @media (min-width: @desktop-width) {
+      right: calc(50vw - (@desktop-width / 2));
+
+      &:hover,
+      &:focus {
+        background: linear-gradient(270deg, @basic-white 0%, rgba(@basic-white, 0) 100%);
+      }
+    }
+
+    &:active {
+      background: linear-gradient(270deg, rgba(@basic-primary, 0.25) 0%, rgba(@basic-primary, 0) 100%);
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+  }
+}
+
+.slider__button svg {
+  width: 11px;
+  height: 20px;
+}
+
+.slider__pagination-bullet {
+  &:hover,
+  &:focus {
+    --swiper-pagination-bullet-inactive-color: @primary-translucent;
+  }
+}
+
+:root {
+  --swiper-pagination-color: @basic-primary;
+  --swiper-pagination-bottom: 60px;
+  --swiper-pagination-bullet-width: 62px;
+  --swiper-pagination-bullet-height: 4px;
+  --swiper-pagination-bullet-border-radius: 0;
+  --swiper-pagination-bullet-inactive-color: @basic-white;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
