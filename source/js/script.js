@@ -42,6 +42,7 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+    disabledClass: 'slider__button--disabled'
   },
   observer: true,
   observeParents: true,
@@ -84,7 +85,7 @@ const map = L.map('map')
   .setView({
     lat: 59.968322,
     lng: 30.317359,
-  }, 20);
+  }, 18);
 
 L.tileLayer(
   'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -94,7 +95,7 @@ L.tileLayer(
 ).addTo(map);
 
 const mainPinIcon = L.icon({
-  iconUrl: '../img/map-marker.svg',
+  iconUrl: '../img/map-marker.png',
   iconSize: [38, 50],
   iconAnchor: [19, 50],
 });

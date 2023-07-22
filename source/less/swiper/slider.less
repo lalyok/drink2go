@@ -15,6 +15,7 @@
 }
 
 .slider__button {
+  color: @basic-primary;
   position: absolute;
   width: 20px;
   height: 100%;
@@ -66,6 +67,10 @@
   @media (min-width: @tablet-width) {
     width: 80px;
   }
+
+  &--disabled {
+    color: @basic-gray;
+  }
 }
 
 .slider__button svg {
@@ -82,7 +87,7 @@
 
 :root {
   --swiper-pagination-color: @basic-primary;
-  --swiper-pagination-bottom: 60px;
+  --swiper-pagination-bottom: 64px;
   --swiper-pagination-bullet-width: 62px;
   --swiper-pagination-bullet-height: 4px;
   --swiper-pagination-bullet-border-radius: 0;

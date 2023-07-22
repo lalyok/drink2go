@@ -1,4 +1,7 @@
-.pagination {
+.pagination__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -20,6 +23,7 @@
     background-color: transparent;
     font-weight: 700;
     color: @basic-black;
+    cursor: default;
 
     &:hover,
     &:focus,
@@ -38,6 +42,10 @@
       padding: 8px 20px;
     }
   }
+}
+
+.pagination__button--active + .pagination__button--forward {
+  display: none;
 }
 
 .pagination__icon {

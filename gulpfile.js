@@ -7,14 +7,13 @@ import postUrl from 'postcss-url';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import webpack from 'webpack-stream';
-import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import { stacksvg } from "gulp-stacksvg";
+import { stacksvg } from 'gulp-stacksvg';
 import { deleteAsync } from 'del';
 import browser from 'browser-sync';
 import bemlinter from 'gulp-html-bemlinter';
-import { htmlValidator } from "gulp-w3c-html-validator";
+import { htmlValidator } from 'gulp-w3c-html-validator';
 
 let isDevelopment = true;
 
@@ -48,17 +47,14 @@ export function processStyles () {
 }
 
 export function processNormalize () {
-  return gulp.src('source/css/normalize.css')
+  return gulp.src('source/css/normalize.css', { sourcemaps: isDevelopment })
     .pipe(plumber())
-    .pipe(sourcemap.init())
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
-    .pipe(sourcemap.write("."))
-    .pipe(rename("normalize.min.css"))
-    .pipe(gulp.dest("build/css"))
-    .pipe(sync.stream());
+    .pipe(gulp.dest('build/css', { sourcemaps: isDevelopment }))
+    .pipe(browser.stream());
 }
 
 export function processScripts () {
@@ -73,16 +69,16 @@ export function processScripts () {
       {
         test: /\.css$/i,
         use: [
-          "style-loader",
-          "css-loader"
+          'style-loader',
+          'css-loader'
         ],
       },
       {
         test: /\.less$/i,
         use: [
-          "style-loader",
-          "css-loader",
-          "less-loader"
+          'style-loader',
+          'css-loader',
+          'less-loader'
         ],
       },
     ],
@@ -157,6 +153,7 @@ function compileProject (done) {
   gulp.parallel(
     processMarkup,
     processStyles,
+    processNormalize,
     processScripts,
     optimizeVector,
     createStack,

@@ -5,7 +5,7 @@
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -25,9 +25,7 @@
               <img class="logo__image" src="img/logo-small.svg" width="32" height="36" alt="Логотип Drink2Go">
             </picture>
           </a>
-          <p class="logo__text show show--desktop">
-            Интернет-магазин кофейных напитков
-          </p>
+          <p class="logo__text show show--desktop">Интернет-магазин кофейных напитков</p>
         </div>
 
         <nav class="page-header__menu main-nav">
@@ -52,7 +50,7 @@
         <ul class="user-menu">
           <li class="user-menu__item">
             <a class="user-menu__link" href="#">
-              <svg class="user-menu__icon" width="16" height="16">
+              <svg class="user-menu__icon" width="16" height="16" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icons/stack.svg#user"></use>
               </svg>
               <span class="show show--desktop">Войти</span>
@@ -60,7 +58,7 @@
           </li>
           <li class="user-menu__item">
             <a class="user-menu__link" href="#">
-              <svg class="user-menu__icon" width="16" height="16">
+              <svg class="user-menu__icon" width="16" height="16" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icons/stack.svg#cart"></use>
               </svg>
               <span class="show show--desktop">Корзина</span>
@@ -102,9 +100,7 @@
 
                   <div class="product__inner">
                     <h3 class="product__title">Декаф Флэт Уайт</h3>
-                    <p class="product__description">
-                      Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
-                    </p>
+                    <p class="product__description">Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком — то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
                     <div class="product__buy offer offer--align-left">
                       <p class="offer__old-price">295₽</p>
                       <p class="offer__price">225₽</p>
@@ -134,9 +130,7 @@
 
                   <div class="product__inner">
                     <h3 class="product__title">Лавандовый Латте</h3>
-                    <p class="product__description">
-                      Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
-                    </p>
+                    <p class="product__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
                     <div class="product__buy offer offer--align-left">
                       <p class="offer__old-price">285₽</p>
                       <p class="offer__price">265₽</p>
@@ -166,9 +160,7 @@
 
                   <div class="product__inner">
                     <h3 class="product__title">Тройной Эспрессо</h3>
-                    <p class="product__description">
-                      Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
-                    </p>
+                    <p class="product__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
                     <div class="product__buy offer offer--align-left">
                       <p class="offer__old-price">395₽</p>
                       <p class="offer__price">375₽</p>
@@ -184,12 +176,12 @@
           </div>
 
           <div class="swiper-button-prev slider__button slider__button--prev">
-            <svg width="11" height="20">
+            <svg width="11" height="20" aria-hidden="true" focusable="false">
               <use xlink:href="img/icons/stack.svg#slider-prev"></use>
             </svg>
           </div>
           <div class="swiper-button-next slider__button slider__button--next">
-            <svg width="11" height="20">
+            <svg width="11" height="20" aria-hidden="true" focusable="false">
               <use xlink:href="img/icons/stack.svg#slider-next"></use>
             </svg>
           </div>
@@ -202,13 +194,11 @@
       <section class="advantages">
         <div class="advantages__wrapper">
           <p class="advantages__subtitle">Преимущества</p>
-          <h2 class="advantages__title">
-            Главные причины выбрать Drink2Go
-          </h2>
+          <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
 
           <ul class="advantages__list">
             <li class="advantages__item feature">
-              <svg class="feature__icon" width="52" height="56">
+              <svg class="feature__icon" width="52" height="56" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icons/stack.svg#speed"></use>
               </svg>
               <div class="feature__inner">
@@ -217,16 +207,16 @@
               </div>
             </li>
             <li class="advantages__item feature">
-              <svg class="feature__icon" width="52" height="56">
+              <svg class="feature__icon" width="52" height="56" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icons/stack.svg#fit"></use>
               </svg>
               <div class="feature__inner">
                 <h3 class="feature__title">Удобство</h3>
-                <p class="feature__text">Легко помещается и в карман, и в маленькую сумочку</p>
+                <p class="feature__text">Легко помещается и в карман, и&nbsp;в&nbsp;маленькую сумочку</p>
               </div>
             </li>
             <li class="advantages__item feature">
-              <svg class="feature__icon" width="52" height="56">
+              <svg class="feature__icon" width="52" height="56" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icons/stack.svg#energy"></use>
               </svg>
               <div class="feature__inner">
@@ -235,12 +225,12 @@
               </div>
             </li>
             <li class="advantages__item feature">
-              <svg class="feature__icon" width="52" height="56">
+              <svg class="feature__icon" width="52" height="56" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icons/stack.svg#ecology"></use>
               </svg>
               <div class="feature__inner">
                 <h3 class="feature__title">Экологичность</h3>
-                <p class="feature__text">Вся упаковка сделана из перерабатываемых материалов</p>
+                <p class="feature__text">Вся упаковка сделана из&nbsp;перерабатываемых материалов</p>
               </div>
             </li>
           </ul>
@@ -250,9 +240,7 @@
       <section class="catalog">
         <div class="catalog__wrapper">
           <p class="catalog__subtitle">Каталог</p>
-          <h2 class="catalog__title">
-            Каталог кофейных напитков
-          </h2>
+          <h2 class="catalog__title">Каталог кофейных напитков</h2>
 
           <div class="catalog__container products-search">
 
@@ -263,8 +251,8 @@
 
                 <div class="price-range__slider range"></div>
                 <div class="price-range__values-container">
-                  <input class="price-range__value" type="number" name="from-value" value="0" min="0" max="1000">
-                  <input class="price-range__value" type="number" name="to-value" value="900" min="0" max="1000">
+                  <input class="price-range__value" type="number" name="from-value" placeholder="0" min="0" max="1000">
+                  <input class="price-range__value" type="number" name="to-value" placeholder="900" min="0" max="1000">
                 </div>
               </fieldset>
 
@@ -286,7 +274,7 @@
                   </li>
                   <li class="radio__item">
                     <input class="radio__input visually-hidden" id="milk-free" type="radio" name="milk-filter" value="milk-free" disabled>
-                    <label class="radio__label" for="milk-free">Неважно</label>
+                    <label class="radio__label" for="milk-free">Без молока</label>
                   </li>
                 </ul>
               </fieldset>
@@ -319,8 +307,8 @@
               </fieldset>
 
               <div class="filter__item filter__buttons-container">
-                <input class="filter__button button" type="submit" value="Применить">
-                <input class="filter__button button button--white" type="reset" value="Сбросить">
+                <button class="filter__button button" type="submit">Применить</button>
+                <button class="filter__button button button--white" type="reset">Сбросить</button>
               </div>
 
             </form>
@@ -348,18 +336,16 @@
                     <h3 class="product-card__name">Декаф Флэт Уайт</h3>
                   </a>
 
-                  <p class="product-card__description">
-                    Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-                  </p>
+                  <p class="product-card__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
 
                   <div class="product-card__buy offer offer--card">
                     <p class="offer__price">225₽</p>
-                    <button class="offer__buy-button button button--smaller-text" type="button">
-                      <svg class="offer__buy-button-icon" width="20" height="16">
+                    <a class="offer__buy-button button button--smaller-text" href="#">
+                      <svg class="offer__buy-button-icon" width="20" height="16" aria-hidden="true" focusable="false">
                         <use xlink:href="img/icons/stack.svg#cart-plus"></use>
                       </svg>
                       В корзину
-                    </button>
+                    </a>
                   </div>
 
                 </li>
@@ -374,18 +360,16 @@
                     <h3 class="product-card__name">Декаф Флэт Уайт</h3>
                   </a>
 
-                  <p class="product-card__description">
-                    Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-                  </p>
+                  <p class="product-card__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
 
                   <div class="product-card__buy offer offer--card">
                     <p class="offer__price">225₽</p>
-                    <button class="offer__buy-button button button--smaller-text" type="button">
-                      <svg class="offer__buy-button-icon" width="20" height="16">
+                    <a class="offer__buy-button button button--smaller-text" href="#">
+                      <svg class="offer__buy-button-icon" width="20" height="16" aria-hidden="true" focusable="false">
                         <use xlink:href="img/icons/stack.svg#cart-plus"></use>
                       </svg>
                       В корзину
-                    </button>
+                    </a>
                   </div>
 
                 </li>
@@ -400,18 +384,16 @@
                     <h3 class="product-card__name">Декаф Флэт Уайт</h3>
                   </a>
 
-                  <p class="product-card__description">
-                    Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-                  </p>
+                  <p class="product-card__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
 
                   <div class="product-card__buy offer offer--card">
                     <p class="offer__price">225₽</p>
-                    <button class="offer__buy-button button button--smaller-text" type="button">
-                      <svg class="offer__buy-button-icon" width="20" height="16">
+                    <a class="offer__buy-button button button--smaller-text" href="#">
+                      <svg class="offer__buy-button-icon" width="20" height="16" aria-hidden="true" focusable="false">
                         <use xlink:href="img/icons/stack.svg#cart-plus"></use>
                       </svg>
                       В корзину
-                    </button>
+                    </a>
                   </div>
 
                 </li>
@@ -426,18 +408,16 @@
                     <h3 class="product-card__name">Декаф Флэт Уайт</h3>
                   </a>
 
-                  <p class="product-card__description">
-                    Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-                  </p>
+                  <p class="product-card__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
 
                   <div class="product-card__buy offer offer--card">
                     <p class="offer__price">225₽</p>
-                    <button class="offer__buy-button button button--smaller-text" type="button">
-                      <svg class="offer__buy-button-icon" width="20" height="16">
+                    <a class="offer__buy-button button button--smaller-text" href="#">
+                      <svg class="offer__buy-button-icon" width="20" height="16" aria-hidden="true" focusable="false">
                         <use xlink:href="img/icons/stack.svg#cart-plus"></use>
                       </svg>
                       В корзину
-                    </button>
+                    </a>
                   </div>
 
                 </li>
@@ -452,18 +432,16 @@
                     <h3 class="product-card__name">Декаф Флэт Уайт</h3>
                   </a>
 
-                  <p class="product-card__description">
-                    Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-                  </p>
+                  <p class="product-card__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
 
                   <div class="product-card__buy offer offer--card">
                     <p class="offer__price">225₽</p>
-                    <button class="offer__buy-button button button--smaller-text" type="button">
-                      <svg class="offer__buy-button-icon" width="20" height="16">
+                    <a class="offer__buy-button button button--smaller-text" href="#">
+                      <svg class="offer__buy-button-icon" width="20" height="16" aria-hidden="true" focusable="false">
                         <use xlink:href="img/icons/stack.svg#cart-plus"></use>
                       </svg>
                       В корзину
-                    </button>
+                    </a>
                   </div>
 
                 </li>
@@ -478,18 +456,16 @@
                     <h3 class="product-card__name">Декаф Флэт Уайт</h3>
                   </a>
 
-                  <p class="product-card__description">
-                    Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-                  </p>
+                  <p class="product-card__description">Кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком</p>
 
                   <div class="product-card__buy offer offer--card">
                     <p class="offer__price">225₽</p>
-                    <button class="offer__buy-button button button--smaller-text" type="button">
-                      <svg class="offer__buy-button-icon" width="20" height="16">
+                    <a class="offer__buy-button button button--smaller-text" href="#">
+                      <svg class="offer__buy-button-icon" width="20" height="16" aria-hidden="true" focusable="false">
                         <use xlink:href="img/icons/stack.svg#cart-plus"></use>
                       </svg>
                       В корзину
-                    </button>
+                    </a>
                   </div>
 
                 </li>
@@ -498,21 +474,33 @@
             </div>
 
             <div class="products-search__pagination pagination">
-              <button class="pagination__button pagination__button--back button button--white" type="button">
-                <svg class="pagination__icon show show--mobile" width="6" height="10">
-                  <use xlink:href="img/icons/stack.svg#arrow-left"></use>
-                </svg>
-                <span class="show show--desktop show--tablet">Назад</span>
-              </button>
-              <button class="pagination__button button button--white">1</button>
-              <button class="pagination__button pagination__button--active button button--white">2</button>
-              <button class="pagination__button button button--white">3</button>
-              <button class="pagination__button pagination__button--forward button button--white" type="button">
-                <svg class="pagination__icon show show--mobile" width="6" height="10">
-                  <use xlink:href="img/icons/stack.svg#arrow-right"></use>
-                </svg>
-                <span class="show show--desktop show--tablet">Вперёд</span>
-              </button>
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__button button button--white pagination__button--back" href="#">
+                    <svg class="pagination__icon show show--mobile" width="6" height="10" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/icons/stack.svg#arrow-left"></use>
+                    </svg>
+                    <span class="show show--desktop show--tablet">Назад</span>
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__button button button--white" href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__button button button--white pagination__button--active">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__button button button--white" href="#">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__button button button--white pagination__button--forward" href="#">
+                    <svg class="pagination__icon show show--mobile" width="6" height="10" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/icons/stack.svg#arrow-right"></use>
+                    </svg>
+                    <span class="show show--desktop show--tablet">Вперёд</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -545,16 +533,14 @@
                 <img class="logo__image" src="img/logo-medium.svg" width="82" height="36" alt="Логотип Drink2Go">
               </picture>
             </a>
-            <p class="logo__text show show--desktop">
-              Интернет-магазин кофейных напитков
-            </p>
+            <p class="logo__text show show--desktop">Интернет-магазин кофейных напитков</p>
           </div>
 
           <ul class="socials">
             <li class="socials__item">
               <a href="#" class="socials__link">
                 <span class="visually-hidden">Наша группа Вконтакте</span>
-                <svg class="socials__icon" width="20" height="20">
+                <svg class="socials__icon" width="20" height="20" aria-hidden="true" focusable="false">
                   <use xlink:href="img/icons/stack.svg#vk"></use>
                 </svg>
               </a>
@@ -562,7 +548,7 @@
             <li class="socials__item">
               <a href="#" class="socials__link">
                 <span class="visually-hidden">Наш Пинтерест</span>
-                <svg class="socials__icon" width="22" height="22">
+                <svg class="socials__icon" width="22" height="22" aria-hidden="true" focusable="false">
                   <use xlink:href="img/icons/stack.svg#pinterest"></use>
                 </svg>
               </a>
@@ -570,7 +556,7 @@
             <li class="socials__item">
               <a href="#" class="socials__link">
                 <span class="visually-hidden">Наша группа в Одноклассниках</span>
-                <svg class="socials__icon" width="20" height="20">
+                <svg class="socials__icon" width="20" height="20" aria-hidden="true" focusable="false">
                   <use xlink:href="img/icons/stack.svg#ok"></use>
                 </svg>
               </a>
@@ -583,16 +569,16 @@
           <h3 class="page-footer__title">Интернет-магазин</h3>
           <ul class="page-footer__list footer-list">
             <li class="footer-list__item">
-              <a class="footer-list__link" href="#" >Каталог</a>
+              <a class="footer-list__link" href="#">Каталог</a>
             </li>
             <li class="footer-list__item">
-              <a class="footer-list__link" href="#" >Доставка</a>
+              <a class="footer-list__link" href="#">Доставка</a>
             </li>
             <li class="footer-list__item">
-              <a class="footer-list__link" href="#" >Способы оплаты</a>
+              <a class="footer-list__link" href="#">Способы оплаты</a>
             </li>
             <li class="footer-list__item">
-              <a class="footer-list__link" href="#" >О нас</a>
+              <a class="footer-list__link" href="#">О нас</a>
             </li>
           </ul>
         </div>
@@ -601,13 +587,13 @@
           <h3 class="page-footer__title">Медиа</h3>
           <ul class="page-footer__list footer-list">
             <li class="footer-list__item">
-              <a class="footer-list__link" href="#" >Блог</a>
+              <a class="footer-list__link" href="#">Блог</a>
             </li>
             <li class="footer-list__item">
-              <a class="footer-list__link" href="#" >Информация для СМИ</a>
+              <a class="footer-list__link" href="#">Информация для СМИ</a>
             </li>
             <li class="footer-list__item">
-              <a class="footer-list__link" href="#" >Правовая информация</a>
+              <a class="footer-list__link" href="#">Правовая информация</a>
             </li>
           </ul>
         </div>
@@ -616,13 +602,13 @@
           <h3 class="page-footer__title page-footer__title--contacts">Контакты</h3>
           <ul class="page-footer__list contacts__list">
             <li class="contacts__item">
-              <svg class="contacts__icon" width="13" height="16">
+              <svg class="contacts__icon" width="13" height="16" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icons/stack.svg#location"></use>
               </svg>
               Санкт-Петербург, набережная реки Карповки, дом 5
             </li>
             <li class="contacts__item">
-              <svg class="contacts__icon" width="13" height="16">
+              <svg class="contacts__icon" width="13" height="16" aria-hidden="true" focusable="false">
                 <use xlink:href="img/icons/stack.svg#phone"></use>
               </svg>
               <a class="contacts__link" href="tel:+79999999999">
@@ -635,7 +621,7 @@
         <p class="page-footer__copyright copyright">
           Разработано в
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <svg class="copyright__icon" width="112" height="16">
+            <svg class="copyright__icon" width="112" height="16" role="img" aria-label="Логотип HTML Academy.">
               <use xlink:href="img/icons/stack.svg#html-academy-logo"></use>
             </svg>
           </a>

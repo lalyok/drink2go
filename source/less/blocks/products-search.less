@@ -12,6 +12,11 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 44px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }
 
 .products-search__sorting {
@@ -23,14 +28,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    order: -1;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: -1;
   }
 }
 
 .products-search__results {
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 70px;

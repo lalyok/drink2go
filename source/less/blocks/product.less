@@ -9,7 +9,7 @@
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-    padding: 30px 80px 60px;
+    padding: 30px 80px 84px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 650px 1fr;
@@ -27,7 +27,7 @@
     width: 476px;
     height: 476px;
     position: absolute;
-    top: 352px;
+    bottom: -188px;
     left: 0;
     right: 0;
     margin: auto;
@@ -42,6 +42,8 @@
 }
 
 .product__inner {
+  max-width: 625px;
+
   @media (min-width: @desktop-width) {
     margin-top: 170px;
   }
@@ -50,7 +52,7 @@
 .product__title {
   .title-large();
   position: relative;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 10px;
 
   &::before {

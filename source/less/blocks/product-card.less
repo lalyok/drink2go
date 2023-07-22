@@ -6,6 +6,13 @@
   @media (min-width: @tablet-width) {
     padding: 50px 30px 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    &:hover,
+    &:focus-within {
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
 }
 
 .product-card__link {
@@ -19,7 +26,7 @@
   margin-right: auto;
   object-fit: contain;
   background-color: @basic-gray;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
@@ -29,7 +36,7 @@
 .product-card__name {
   .title-small();
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 10px;
@@ -38,7 +45,9 @@
 
 .product-card__description {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 20px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;

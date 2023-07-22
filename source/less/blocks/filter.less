@@ -23,13 +23,19 @@
   &--radio {
     @media (max-width: @mobile-width-only) {
       margin-bottom: 34px;
+
+      &:last-child {
+        margin-bottom: 40px;
+      }
     }
   }
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
+
   @media (min-width: @desktop-width) {
-    &:last-child {
-      margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
 
     &:nth-last-child(2) {
       margin-bottom: 40px;

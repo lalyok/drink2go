@@ -5,6 +5,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: @desktop-width) {
+    gap: 20px;
+  }
 }
 
 .user-menu__link {
@@ -22,6 +26,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     width: auto;
     gap: 8px;
