@@ -36,21 +36,23 @@
   &--white {
     background-color: @basic-white;
     color: @basic-primary;
+  }
+}
 
-    @media (min-width: @desktop-width) {
-      &:hover,
-      &:focus {
-        color: @basic-white;
-      }
-    }
-
-    &:active,
-    &:disabled {
+.button--white {
+  @media (min-width: @desktop-width) {
+    &:hover,
+    &:focus {
       color: @basic-white;
     }
+  }
 
-    &:disabled {
-      background-color: @light-gray;
-    }
+  &:active,
+  &:disabled {
+    color: @basic-white;
+  }
+
+  &:disabled {
+    background-color: @light-gray;
   }
 }

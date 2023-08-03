@@ -251,12 +251,14 @@
 
                 <div class="price-range__slider range"></div>
                 <div class="price-range__values-container">
-                  <input class="price-range__value" type="number" name="from-value" placeholder="0" min="0" max="1000">
-                  <input class="price-range__value" type="number" name="to-value" placeholder="900" min="0" max="1000">
+                  <label class="visually-hidden" for="price-from">Минимальная стоимость</label>
+                  <input class="price-range__value" id="price-from" type="number" name="from-value" placeholder="0" min="0" max="1000">
+                  <label class="visually-hidden" for="price-to">Максимальная стоимость</label>
+                  <input class="price-range__value" id="price-to" type="number" name="to-value" placeholder="900" min="0" max="1000">
                 </div>
               </fieldset>
 
-              <fieldset class="filter__item filter__item--radio radio">
+              <fieldset class="filter__item filter__item--extra-margin radio">
                 <legend class="filter__item-title">Наличие молока</legend>
 
                 <ul class="radio__list">

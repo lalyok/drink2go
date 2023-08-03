@@ -14,38 +14,35 @@
 }
 
 .pagination__button {
-  width: 40px;
-  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
   padding: 8px;
-  text-align: center;
 
   &--active {
     background-color: transparent;
     font-weight: 700;
     color: @basic-black;
     cursor: default;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: transparent;
-      font-weight: 700;
-      color: @basic-black;
-    }
   }
 
   @media (min-width: @tablet-width) {
     &--back,
     &--forward {
-      width: auto;
-      height: auto;
       padding: 8px 20px;
     }
   }
 }
 
-.pagination__button--active + .pagination__button--forward {
-  display: none;
+.pagination__button--active {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    font-weight: 700;
+    color: @basic-black;
+  }
 }
 
 .pagination__icon {

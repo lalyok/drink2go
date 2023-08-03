@@ -1,3 +1,5 @@
+// Additional import of variables for the JS library
+
 @import "../global/variables.less";
 
 .slider__slide {
@@ -26,50 +28,54 @@
   justify-content: center;
   align-items: center;
 
+  @media (min-width: @tablet-width) {
+    width: 80px;
+  }
+
   &::after {
     display: none;
   }
 
   &--prev {
     left: 0;
-
-    @media (min-width: @desktop-width) {
-      left: calc(50vw - (@desktop-width / 2));
-
-      &:hover,
-      &:focus {
-        background: linear-gradient(90deg, @basic-white 0%, rgba(@basic-white, 0) 100%);
-      }
-    }
-
-    &:active {
-      background: linear-gradient(90deg, rgba(@basic-primary, 0.25) 0%, rgba(@basic-primary, 0) 100%);
-    }
   }
 
   &--next {
     right: 0;
-
-    @media (min-width: @desktop-width) {
-      right: calc(50vw - (@desktop-width / 2));
-
-      &:hover,
-      &:focus {
-        background: linear-gradient(270deg, @basic-white 0%, rgba(@basic-white, 0) 100%);
-      }
-    }
-
-    &:active {
-      background: linear-gradient(270deg, rgba(@basic-primary, 0.25) 0%, rgba(@basic-primary, 0) 100%);
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 80px;
   }
 
   &--disabled {
     color: @basic-gray;
+  }
+}
+
+.slider__button--prev {
+  &:active {
+    background: linear-gradient(90deg, rgba(@basic-primary, 0.25) 0%, rgba(@basic-primary, 0) 100%);
+  }
+
+  @media (min-width: @desktop-width) {
+    left: calc(50vw - (@desktop-width / 2));
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(90deg, @basic-white 0%, rgba(@basic-white, 0) 100%);
+    }
+  }
+}
+
+.slider__button--next {
+  &:active {
+    background: linear-gradient(270deg, rgba(@basic-primary, 0.25) 0%, rgba(@basic-primary, 0) 100%);
+  }
+
+  @media (min-width: @desktop-width) {
+    right: calc(50vw - (@desktop-width / 2));
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(270deg, @basic-white 0%, rgba(@basic-white, 0) 100%);
+    }
   }
 }
 
@@ -78,12 +84,15 @@
   height: 20px;
 }
 
+// Reassignment of the Swiper JS global variables
+
 .slider__pagination-bullet {
   &:hover,
   &:focus {
     --swiper-pagination-bullet-inactive-color: @primary-translucent;
   }
 }
+
 
 :root {
   --swiper-pagination-color: @basic-primary;

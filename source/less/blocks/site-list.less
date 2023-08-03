@@ -30,15 +30,20 @@
   display: block;
   padding: 20px 20px 19px;
   text-align: center;
-  border-bottom: 1px solid @basic-secondary;
+
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid @basic-secondary;
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 32px;
     padding-bottom: 30px;
+  }
+}
 
-    &--active {
-      border-bottom: 2px solid @basic-primary;
-      color: @basic-primary;
-    }
+.site-list__link--active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @basic-primary;
+    color: @basic-primary;
   }
 }

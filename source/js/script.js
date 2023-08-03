@@ -24,7 +24,7 @@ Swiper.use([ Navigation, Pagination, Autoplay ])
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../less/swiper/slider.less';
+import '../less/blocks/slider.less';
 
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
@@ -58,7 +58,7 @@ noUiSlider.cssClasses.handle += ' range__handle';
 noUiSlider.cssClasses.connect += ' range__connect';
 noUiSlider.cssClasses.connects += ' range__connects';
 
-import '../less/range/range.less'
+import '../less/blocks/range.less'
 
 const range = document.querySelector('.price-range__slider');
 
